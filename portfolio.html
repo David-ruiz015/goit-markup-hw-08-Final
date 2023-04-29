@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+   <header class="header">
+      <div class="container">
+        <a href="./index.html" class="logo header__logo"
+          >Web<span class="logo__accent">Studio</span></a
+        >
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li>
+              <a class="header__nav-link" href="./index.html">Studio</a>
+            </li>
+            <li>
+              <a class="header__nav-link current" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li><a class="header__nav-link" href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+        <ul class="header__contact-list">
+          <li>
+            <a class="header__contact-link" href="mailto:info@devstudio.com"
+              ><svg class="header__icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="header__contact-link" href="tel:+380961111111"
+              ><svg class="header__icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+        <button
+          type="button"
+          class="mob-menu__btn"
+          aria-expanded="false"
+          aria-controls="mob-menu"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Mobile menu switch"
+          >
+            <use
+              class="icon-menu-close"
+              href="./images/icons.svg#icon-menu-close"
+            ></use>
+            <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <nav class="mob-menu" id="mob-menu" data-menu>
+          <ul class="mob-menu__nav">
+            <li class="mob-menu__nav-item">
+              <a class="mob-menu__nav-link" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mob-menu__nav-item">
+              <a class="mob-menu__nav-link mob-current" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mob-menu__nav-item">
+              <a class="mob-menu__nav-link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+          <ul class="mob-menu__contact-list">
+            <li class="mob-menu__contact">
+              <a class="mob-menu__contact-tel" href="tel:+380961111111">
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="mob-menu__contact">
+              <a
+                class="mob-menu__contact-email"
+                href="mailto:info@devstudio.com"
+              >
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mob-menu__socials">
+            <li class="mob-menu__network">
+              <a class="mob-menu__network-link" href="">Instagram</a>
+            </li>
+            <li class="mob-menu__network">
+              <a class="mob-menu__network-link" href="">Twitter</a>
+            </li>
+            <li class="mob-menu__network">
+              <a class="mob-menu__network-link" href="">Facebook</a>
+            </li>
+            <li class="mob-menu__network">
+              <a class="mob-menu__network-link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="visually-hidden">Projects</h1>
+          <ul class="filter-list">
+            <li class="filter-category"><button type="button" class="filter-btn">All</button></li>
+            <li class="filter-category">
+              <button type="button" class="filter-btn">Web sites</button>
+            </li>
+            <li class="filter-category">
+              <button type="button" class="filter-btn">App</button>
+            </li class="filter-category">
+            <li class="filter-category"><button type="button" class="filter-btn">Design</button></li>
+            <li class="filter-category">
+              <button type="button" class="filter-btn">Marketing</button>
+            </li>
+          </ul>
+          <ul class="projects-list">
+            <li class="project-item">
+              <a
+                class="project-link"
+                href=""
+                rel="noopener nofollow noreferrer"
+              >
+                <div class="project-wrap">
+                  <picture>
+                    <source srcset="./images/projects/mob-project1.jpg 450w,
+                    ./images/projects/mob-project1@2x.jpg 900w" media="(max-width: 767px)" sizes="(min-width: 480px) 450px, 100vw" type="image/jpeg" />
+                    <source srcset="./images/projects/tab-project1.jpg 354w,
+                    ./images/projects/tab-project1@2x.jpg 708w" media="(max-width: 1199px)" sizes="(min-width: 768px) 354px, 100vw" type="image/jpeg" />
+                    <source srcset="./images/projects/desk-project1.jpg 370w,
+                    ./images/projects/desk-project1@2x.jpg 740w" media="(min-width: 1200px)" sizes="(min-width: 1200px) 370px, 100vw" type="image/jpeg" />
+                    <img src="./images/projects/mob-project1.jpg"
+                    alt="our cool project" /></picture>
+                  <p class="project-desc">
+                    Tecnoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.
+                  </p>
+                </div>
+                <div class="project-caption">
+                  <h2 class="project-name">TecnoCrack</h2>
+                  <p class="project-type">Sitio Web</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a
+                class="project-link"
+                href=""
+                rel="noopener nofollow noreferrer"
+              >
+                <div class="project-wrap">
+                  <picture>
+                    <source srcset="./images/projects/mob-project2.jpg 450w,
+                    ./images/projects/mob-project2@2x.jpg 900w" media="(max-width: 767px)" sizes="(min-width: 480px) 450px, 100vw" type="image/jpeg" />
+                    <source srcset="./images/projects/tab-project2.jpg 354w,
+                    ./images/projects/tab-project2@2x.jpg 708w" media="(max-width: 1199px)" sizes="(min-width: 768px) 354px, 100vw" type="image/jpeg" />
+                    <source srcset="./images/projects/desk-project2.jpg 370w,
+                    ./images/projects/desk-project2@2x.jpg 740w" media="(min-width: 1200px)" sizes="(min-width: 1200px) 370px, 100vw" type="image/jpeg" />
+                    <img src="./images/projects/mob-project2.jpg"
+                    alt="our cool project" /></picture>
+                  <p class="project-desc">Tecnoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+                </div>
+                <div class="project-caption">
+                  <h2 class="project-name">New Orlean vs Golden Star poster</h2>
+                  <p class="project-type">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a
+                class="project-link"
+                href=""
+                rel="noopener nofollow noreferrer"
+              >
+                <div class="project-wrap">
+                  <picture>
+                    <source srcset="./images/projects/mob-project3.jpg 450w,
+                    ./images/projects/mob-project3@2x.jpg 900w" media="(max-width: 767px)" sizes="(min-width: 480px) 450px, 100vw" type="image/jpeg" />
+                    <source srcset="./images/projects/tab-project3.jpg 354w,
+                    ./images/projects/tab-project3@2x.jpg 708w" media="(max-width: 1199px)" sizes="(min-width: 768px) 354px, 100vw" type="image/jpeg" />
+                    <source srcset="./images/projects/desk-project3.jpg 370w,
+                    ./images/projects/desk-project3@2x.jpg 740w" media="(min-width: 1200px)" sizes="(min-width: 1200px) 370px, 100vw" type="image/jpeg" />
+                    <img src="./images/projects/mob-project3.jpg"
+                    alt="our cool project" /></picture>
+                  <p class="project-desc">Tecnoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+                </div>
+                <div class="project-caption">
+                  <h2 class="project-name">Seafood Restaurant</h2>
+                  <p class="project-type">App</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a
+                class="project-link"
+                href=""
+                rel="noopener nofollow noreferrer"
+              >
+                <div class="project-wrap">
+                  <picture>
+                    <source srcset="./images/projects/mob-project4.jpg 450w,
+                    ./images/projects/mob-project4@2x.jpg 900w" media="(max-width: 767px)" sizes="(min-width: 480px) 450px, 100vw" type="image/jpeg" />
+                    <source srcset="./images/projects/tab-project4.jpg 354w,
+                    ./images/projects/tab-project4@2x.jpg 708w" media="(max-width: 1199px)" sizes="(min-width: 768px) 354px, 100vw" type="image/jpeg" />
+                    <source srcset="./images/projects/desk-project4.jpg 370w,
+                    ./images/projects/desk-project4@2x.jpg 740w" media="(min-width: 1200px)" sizes="(min-width: 1200px) 370px, 100vw" type="image/jpeg" />
+                    <img src="./images/projects/mob-project4.jpg"
+                    alt="our cool project" /></picture>
+                  <p class="project-desc">Tecnoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+                </div>
+                <div class="project-caption">
+                  <h2 class="project-name">Prime Project</h2>
+                  <p class="project-type">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a
+                class="project-link"
+                href=""
+                rel="noopener nofollow noreferrer"
+              >
+                <div class="project-wrap">
+                  <picture>
+                    <source srcset="./images/projects/mob-project5.jpg 450w,
+                    ./images/projects/mob-project5@2x.jpg 900w" media="(max-width: 767px)" sizes="(min-width: 480px) 450px, 100vw" type="image/jpeg" />
+                    <source srcset="./images/projects/tab-project5.jpg 354w,
+                    ./images/projects/tab-project5@2x.jpg 708w" media="(max-width: 1199px)" sizes="(min-width: 768px) 354px, 100vw" type="image/jpeg" />
+                    <source srcset="./images/projects/desk-project5.jpg 370w,
+                    ./images/projects/desk-project5@2x.jpg 740w" media="(min-width: 1200px)" sizes="(min-width: 1200px) 370px, 100vw" type="image/jpeg" />
+                    <img src="./images/projects/mob-project5.jpg"
+                    alt="our cool project" /></picture>
+                  <p class="project-desc">Tecnoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+                </div>
+                <div class="project-caption">
+                  <h2 class="project-name">Project Boxes</h2>
+                  <p class="project-type">App</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a
+                class="project-link"
+                href=""
+                rel="noopener nofollow noreferrer"
+              >
+                <div class="project-wrap">
+                  <picture>
+                    <source srcset="./images/projects/mob-project6.jpg 450w,
+                    ./images/projects/mob-project6@2x.jpg 900w" media="(max-width: 767px)" sizes="(min-width: 480px) 450px, 100vw" type="image/jpeg" />
+                    <source srcset="./images/projects/tab-project6.jpg 354w,
+                    ./images/projects/tab-project6@2x.jpg 708w" media="(max-width: 1199px)" sizes="(min-width: 768px) 354px, 100vw" type="image/jpeg" />
+                    <source srcset="./images/projects/desk-project6.jpg 370w,
+                    ./images/projects/desk-project6@2x.jpg 740w" media="(min-width: 1200px)" sizes="(min-width: 1200px) 370px, 100vw" type="image/jpeg" />
+                    <img src="./images/projects/mob-project6.jpg"
+                    alt="our cool project" /></picture>
+                  <p class="project-desc">Tecnoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+                </div>
+                <div class="project-caption">
+                  <h2 lang="en" class="project-name">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="project-type">Web site</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a
+                class="project-link"
+                href=""
+                rel="noopener nofollow noreferrer"
+              >
+                <div class="project-wrap">
+                  <picture>
+                    <source srcset="./images/projects/mob-project7.jpg 450w,
+                    ./images/projects/mob-project7@2x.jpg 900w" media="(max-width: 767px)" sizes="(min-width: 480px) 450px, 100vw" type="image/jpeg" />
+                    <source srcset="./images/projects/tab-project7.jpg 354w,
+                    ./images/projects/tab-project7@2x.jpg 708w" media="(max-width: 1199px)" sizes="(min-width: 768px) 354px, 100vw" type="image/jpeg" />
+                    <source srcset="./images/projects/desk-project7.jpg 370w,
+                    ./images/projects/desk-project7@2x.jpg 740w" media="(min-width: 1200px)" sizes="(min-width: 1200px) 370px, 100vw" type="image/jpeg" />
+                    <img src="./images/projects/mob-project7.jpg"
+                    alt="our cool project" /></picture>
+                  <p class="project-desc">Tecnoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+                </div>
+                <div class="project-caption">
+                  <h2 class="project-name">Limited Edition</h2>
+                  <p class="project-type">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a
+                class="project-link"
+                href=""
+                rel="noopener nofollow noreferrer"
+              >
+                <div class="project-wrap">
+                  <picture>
+                    <source srcset="./images/projects/mob-project8.jpg 450w,
+                    ./images/projects/mob-project8@2x.jpg 900w" media="(max-width: 767px)" sizes="(min-width: 480px) 450px, 100vw" type="image/jpeg" />
+                    <source srcset="./images/projects/tab-project8.jpg 354w,
+                    ./images/projects/tab-project8@2x.jpg 708w" media="(max-width: 1199px)" sizes="(min-width: 768px) 354px, 100vw" type="image/jpeg" />
+                    <source srcset="./images/projects/desk-project8.jpg 370w,
+                    ./images/projects/desk-project8@2x.jpg 740w" media="(min-width: 1200px)" sizes="(min-width: 1200px) 370px, 100vw" type="image/jpeg" />
+                    <img src="./images/projects/mob-project8.jpg"
+                    alt="our cool project" /></picture>
+                  <p class="project-desc">Tecnoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+                </div>
+                <div class="project-caption">
+                  <h2 class="project-name">Project LAB</h2>
+                  <p class="project-type">
+                    Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a
+                class="project-link"
+                href=""
+                rel="noopener nofollow noreferrer"
+              >
+                <div class="project-wrap">
+                    <picture>
+                    <source
+                    srcset="./images/projects/mob-project9.jpg 450w,
+                    ./images/projects/mob-project9@2x.jpg 900w"
+                    media="(max-width: 767px)"
+                    sizes="(min-width: 480px) 450px, 100vw"
+                    type="image/jpeg" />
+                    <source srcset="./images/projects/tab-project9.jpg 354w,
+                    ./images/projects/tab-project9@2x.jpg 708w" media="(max-width: 1199px)" sizes="(min-width: 768px) 354px, 100vw" type="image/jpeg" />
+                    <source srcset="./images/projects/desk-project9.jpg 370w,
+                    ./images/projects/desk-project9@2x.jpg 740w" media="(min-width: 1200px)" sizes="(min-width: 1200px) 370px, 100vw" type="image/jpeg" />
+                    <img src="./images/projects/mob-project9.jpg"
+                    alt="our cool project" /></picture>
+                  <p class="project-desc">Tecnoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+                </div>
+                <div class="project-caption">
+                  <h2 lang="en" class="project-name">Growing Business</h2>
+                  <p class="project-type">App</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__contacts" id="contacts">
+          <nav class="footer__nav">
+            <a href="./index.html" class="logo footer__logo"
+              >Web<span class="logo__accent">Studio</span></a
+            >
+            <address>
+              <ul class="footer__address-list">
+                <li>
+                  <a
+                    class="footer__address"
+                    href="https://goo.gl/maps/BFLRJ4RonseeKcWp8"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                  >
+                  Kiev, avenida. Lesy Ukrainkiy, 26</a
+                  >
+                </li>
+                <li>
+                  <a class="footer__contact" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li>
+                  <a class="footer__contact" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </nav>
+        </div>
+        <div class="footer__socials">
+          <p class="footer__cta">FIND US</p>
+          <ul class="network-links">
+            <li>
+              <a
+                class="network-links__icon"
+                href=""
+                rel="noopener nofollow noreferrer"
+                ><svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a
+                class="network-links__icon"
+                href=""
+                rel="noopener nofollow noreferrer"
+                ><svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a
+                class="network-links__icon"
+                href=""
+                rel="noopener nofollow noreferrer"
+                ><svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a
+                class="network-links__icon"
+                href=""
+                rel="noopener nofollow noreferrer"
+                ><svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__subscribe">
+          <p class="footer__cta">SUBSCRIBE TO THE NEWSLETTER</p>
+          <form class="footer__form" autocomplete="off">
+            <input
+              class="footer__input"
+              type="email"
+              name="email"
+              required
+              placeholder="E-mail"
+            />
+            <button class="footer__btn">
+              Subscribe
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>

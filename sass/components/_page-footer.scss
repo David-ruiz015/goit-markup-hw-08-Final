@@ -1,0 +1,110 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--dark-bg);
+  .container {
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @include desktop {
+      display: flex;
+      align-items: baseline;
+    }
+  }
+}
+.footer__contacts {
+  text-align: center;
+  margin-bottom: 60px;
+  @include tablet {
+    margin-right: 165px;
+  }
+  @include desktop {
+    text-align: left;
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
+}
+.footer__nav li {
+  margin-right: 0;
+}
+.footer__address-list {
+  li:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+.footer__address {
+  font-style: normal;
+  color: var(--main-white);
+  transition: color var(--transition-duration) var(--transition-timing);
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
+}
+.footer__contact {
+  font-style: normal;
+  color: var(--footer-elements);
+  transition: color var(--transition-duration) var(--transition-timing);
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
+}
+.footer__socials {
+  text-align: center;
+  margin-bottom: 60px;
+  @include desktop {
+    margin-right: auto;
+    text-align: left;
+  }
+}
+.footer__cta {
+  display: block;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--main-white);
+  margin-bottom: 20px;
+}
+.footer__subscribe {
+  align-items: center;
+  text-align: center;
+  @include desktop {
+    text-align: left;
+  }
+}
+.footer__form {
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+  }
+  @include desktop {
+    display: flex;
+  }
+}
+.footer__input {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid var(--footer-input-border);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 16px 15px;
+  color: var(--main-white);
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--footer-elements);
+  }
+  margin-bottom: 20px;
+  @include tablet {
+    display: block;
+    width: 450px;
+  }
+  @include desktop {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
+}
